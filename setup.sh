@@ -36,7 +36,7 @@ echo 'creating firestore native db'
 gcloud beta firestore databases create --region=us-central
 # Create a cluster with workload identity enabled and no scopes enabled
 echo 'creating cluster with workload identity enabled'
-gcloud container clusters create cluster-demo --zone us-central1-a   --num-nodes 3 --preemptible --no-enable-autoupgrade --workload-pool=$GOOGLE_CLOUD_PROJECT.svc.id.goog
+gcloud container clusters create cluster-demo --zone us-central1-a --num-nodes 3 --preemptible --no-enable-autoupgrade --workload-pool=$GOOGLE_CLOUD_PROJECT.svc.id.goog
 # Get credentials on the cluster
 echo 'getting credentials'
 gcloud container clusters get-credentials cluster-demo --zone us-central1-a --project $GOOGLE_CLOUD_PROJECT
@@ -75,5 +75,5 @@ kubectl apply -k .
 # set the service account for the api deployment
 echo 'assign service account to api deployment'
 kubectl set serviceaccount deployment demo-api demoaccount -n demo
-echo 'all done. you should be able to add new events and have them appear in firestore'
+echo 'All done. Wait a minute or two for everything to be created/recreated and you should be able to add new events and have them appear in firestore'
 
