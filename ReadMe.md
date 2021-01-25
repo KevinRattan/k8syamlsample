@@ -6,6 +6,6 @@
 1. cd k8syamlsample
 1.  . ./setup.sh
 
-# End result: a cluster running Workload Identity, with our usual trivial event app talking to firestore. Will begin with fake data because nothing there. Use the form to enter an event and from then on you should be able to talk to firestore using the permissions set up via workload identity.
+End result: a cluster running Workload Identity, with our usual trivial event app talking to firestore. Will begin with fake data because nothing there. Use the form to enter an event and from then on you should be able to talk to firestore using the permissions set up via workload identity.
 
-# UI has no firestore permissions, only the API which is running under the demoaccount service account, which is mapped to an IAM service account on which permissions have been set.
+UI has no firestore permissions, only the API which is running under the demoaccount service account, which is mapped to an IAM service account on which permissions have been set.
