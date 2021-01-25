@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-api
-        image: gcr.io/kube-onboard/internal:v0.2
+        image: gcr.io/PROJID/internal:v0.2
         ports:
         - containerPort: 8082
 

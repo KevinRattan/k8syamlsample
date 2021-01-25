@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-ui
-        image: gcr.io/kube-onboard/external:v0.2
+        image: gcr.io/PROJID/external:v0.2
         env: 
         - name: SERVER
           value: "http://demo-service:8082"
