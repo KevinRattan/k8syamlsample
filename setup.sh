@@ -4,7 +4,7 @@ gcloud services enable cloudbuild.googleapis.com
 gcloud services enable firestore.googleapis.com
 gcloud services enable appengine.googleapis.com
 gcloud services enable container.googleapis.com
-
+gcloud services enable iamcredentials.googleapis.com
 # create directory, download code from github
 echo 'downloading from github'
 git clone https://github.com/KevinRattan/sample.git --branch firestorewithtests
